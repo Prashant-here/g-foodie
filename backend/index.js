@@ -5,7 +5,11 @@ const port=5000;
 const mongoDB=require("./db")
 
 mongoDB();
-app.use(cors());
+app.use(cors({
+  origin:'https://g-foodie-vgoa.vercel.app/',
+    optionsSuccessStatus: 200
+
+}));
 
 app.use(express.json());
 app.get('/',(req,res)=>{
