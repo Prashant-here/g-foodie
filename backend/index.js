@@ -5,10 +5,7 @@ const port=5000;
 const mongoDB=require("./db")
 
 mongoDB();
-app.use(cors({
-    origin: 'http://localhost:5173',
-    optionsSuccessStatus: 200
-}));
+app.use(cors());
 
 app.use(express.json());
 app.get('/',(req,res)=>{
