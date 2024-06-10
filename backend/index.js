@@ -6,7 +6,7 @@ const mongoDB=require("./db")
 
 mongoDB();
 app.use(cors({
-  origin:'https://g-foodie-vgoa.vercel.app/',
+  origin:'https://g-foodie-vgoa.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'], 
     optionsSuccessStatus: 200
 
